@@ -37,21 +37,27 @@ rock = 2
 
 if person == "0":
   print(f"You chose scissors, computer chose {computer}")
-  if computer != 2:
+  if computer == 0:
+    print("TIE!")
+  elif computer != 2:
     print("You beat the computer!")
   else:
     print("The computer has won!")
-
 if person == "1":
   print(f"You chose paper, computer chose {computer}")
-  if computer != 0:
+  if computer == 1:
+    print("TIE!")
+  elif computer != 0:
     print("You beat the computer!")
   else:
     print("The computer has won!")
   
 if person == "2":
   print(f"You chose rock, computer chose {computer}")
-  if computer != 1:
+  if computer == 2:
+    print("TIE!")
+  elif computer != 1:
     print("You beat the computer!")
   else:
     print("The computer has won!")
+    
