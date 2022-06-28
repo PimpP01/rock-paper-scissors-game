@@ -1,0 +1,57 @@
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+
+person = input("Rock, Paper or Scissors. ")
+computer = random.randint(0, 2)
+
+scissors = 0
+paper = 1
+rock = 2
+
+if person == "0":
+  print(f"You chose scissors, computer chose {computer}")
+  if computer != 2:
+    print("You beat the computer!")
+  else:
+    print("The computer has won!")
+
+if person == "1":
+  print(f"You chose paper, computer chose {computer}")
+  if computer != 0:
+    print("You beat the computer!")
+  else:
+    print("The computer has won!")
+  
+if person == "2":
+  print(f"You chose rock, computer chose {computer}")
+  if computer != 1:
+    print("You beat the computer!")
+  else:
+    print("The computer has won!")
