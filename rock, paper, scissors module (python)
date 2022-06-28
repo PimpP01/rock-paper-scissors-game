@@ -26,9 +26,7 @@ scissors = '''
 ---.__(___)
 '''
 
-#Write your code below this line 👇
-
-person = input("Rock, Paper or Scissors.\n ")
+person = input("#2 for Rock, #1 for Paper or #0 for Scissors.\n ")
 computer = random.randint(0, 2)
 
 scissors = 0
