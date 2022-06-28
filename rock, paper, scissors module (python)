@@ -26,23 +26,31 @@ scissors = '''
 ---.__(___)
 '''
 
-person = input("#2 for Rock, #1 for Paper or #0 for Scissors.\n ")
+game_images = [scissors, paper, rock]
+
+person = int(input("#2 for Rock, #1 for Paper or #0 for Scissors.\n "))
+
 computer = random.randint(0, 2)
+print(f"The computer chooses {computer}")
+print(game_images[computer])
+
 
 scissors = 0
 paper = 1
 rock = 2
 
-if person == "0":
-  print(f"You chose scissors, computer chose {computer}")
+if person == 0:
+  print("You chose scissors")
+  print(game_images[person])
   if computer == 0:
     print("TIE!")
   elif computer != 2:
     print("You beat the computer!")
   else:
     print("The computer has won!")
-if person == "1":
-  print(f"You chose paper, computer chose {computer}")
+if person == 1:
+  print("You chose paper")
+  print(game_images[person])
   if computer == 1:
     print("TIE!")
   elif computer != 0:
@@ -50,12 +58,12 @@ if person == "1":
   else:
     print("The computer has won!")
   
-if person == "2":
-  print(f"You chose rock, computer chose {computer}")
+if person == 2:
+  print("You chose rock")
+  print(game_images[person])
   if computer == 2:
     print("TIE!")
   elif computer != 1:
     print("You beat the computer!")
   else:
     print("The computer has won!")
-    
